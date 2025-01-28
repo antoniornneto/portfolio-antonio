@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Oswald } from "next/font/google";
 import "./globals.css";
-import Image from "next/image";
-import bg from "../../public/img.jpg";
 
 const oswaldSans = Oswald({
   weight: ["200", "300", "400", "500", "600", "700"],
@@ -22,14 +20,8 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${oswaldSans.className} antialiased min-h-screen box-border relative`}
+        className={`${oswaldSans.className} antialiased min-h-screen box-border`}
       >
-        <Image
-          src={bg}
-          alt="Foto de uma mesa com um computador em um tom mais escuro e quente."
-          sizes="100vw"
-          className="object-cover absolute h-screen blur-[2px]"
-        />
         {children}
       </body>
     </html>

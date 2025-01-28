@@ -24,7 +24,7 @@ export default function Header() {
     },
   ];
   return (
-    <nav className="text-[rgb(243,231,219)] w-screen backdrop-filter backdrop-blur-md py-3">
+    <nav className="sticky z-10 text-[rgb(243,231,219)] w-screen backdrop-filter backdrop-blur-md py-3">
       <ul className="flex gap-10 w-full justify-center items-center">
         {navList.map((item, index) => (
           <li key={index}>

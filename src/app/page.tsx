@@ -1,16 +1,18 @@
-import Header from "@/components/Header";
 import Image from "next/image";
 import Link from "next/link";
 import instagram from "../../public/icons8-instagram-64.png";
 import linkedin from "../../public/icons8-linkedin-50.png";
 import wpp from "../../public/icons8-whatsapp-64.png";
+import Container from "@/components/Container";
 
 export default function Home() {
   return (
-    <main className="h-screen flex flex-col items-center relative">
-      <Header />
+    <Container
+      mainStyle={"bg-[url(../../public/img.jpg)] bg-center bg-cover"}
+      sectionStyle="flex flex-col items-end"
+    >
       {/* Hero section */}
-      <section className="w-full h-full flex flex-col justify-center pb-20 pl-32">
+      <section className="flex flex-col pr-32 my-auto">
         <h1 className="text-9xl uppercase font-light">Antonio</h1>
         <h1 className="text-9xl uppercase font-bold">Nascimento</h1>
         <h2 className="text-4xl tracking-[30px]">Web Developer</h2>
@@ -31,7 +33,7 @@ export default function Home() {
         </div>
       </section>
       {/* Social Media */}
-      <section className="flex w-full justify-start pl-32 pb-10 gap-2 items-center">
+      <section className="flex pr-32 pb-10 gap-2">
         <Link
           href={"https://www.linkedin.com/in/antonio-nascimento-851579237/"}
           target="_blank"
@@ -50,6 +52,6 @@ export default function Home() {
           <Image src={wpp} width={40} height={40} alt="link" />
         </Link>
       </section>
-    </main>
+    </Container>
   );
 }
