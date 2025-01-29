@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import instagram from "../../public/icons8-instagram-64.png";
-import linkedin from "../../public/icons8-linkedin-50.png";
-import wpp from "../../public/icons8-whatsapp-64.png";
+import instagram from "../../public/social/icons8-instagram-64.png";
+import linkedin from "../../public/social/icons8-linkedin-50.png";
+import wpp from "../../public/social/icons8-whatsapp-64.png";
 import Container from "@/components/Container";
 
 export default function Home() {

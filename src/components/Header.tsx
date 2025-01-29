@@ -7,11 +7,11 @@ export default function Header() {
       path: "/",
     },
     {
-      name: "About",
+      name: "Sobre",
       path: "/about",
     },
     {
-      name: "Resume",
+      name: "Experiencia",
       path: "/resume",
     },
     {
@@ -19,12 +19,12 @@ export default function Header() {
       path: "/portfolio",
     },
     {
-      name: "Skills",
-      path: "/skills",
+      name: "Trabalhe Comigo",
+      path: "/workwithme",
     },
   ];
   return (
-    <nav className="sticky z-10 text-[rgb(243,231,219)] w-screen backdrop-filter backdrop-blur-md py-3">
+    <nav className="sticky z-10 text-[rgb(243,231,219)] w-screen backdrop-filter backdrop-blur-md py-3 shadow-lg">
       <ul className="flex gap-10 w-full justify-center items-center">
         {navList.map((item, index) => (
           <li key={index}>

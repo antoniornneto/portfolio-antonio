@@ -1,0 +1,68 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Web site/Sistema Coopervaço",
+      "image": "https://i.imgur.com/uP3MzKg.png",
+      "description": "Projeto full-stack com web site comercial e um sistema de gerenciamento de atas.",
+      "stack": [
+        "Next.js",
+        "Typescript",
+        "Tailwind",
+        "PrismaORM",
+        "PostgreSQL",
+        "Supabase"
+      ],
+      "gitLink": "https://github.com/antoniornneto/coopervaco-system",
+      "link": "https://www.coopervaco.com.br/"
+    },
+    {
+      "id": 2,
+      "title": "Web site/Sistema Coopervaço",
+      "image": "https://i.imgur.com/uP3MzKg.png",
+      "description": "Projeto full-stack com web site comercial e um sistema de gerenciamento de atas.",
+      "stack": [
+        "Next.js",
+        "Typescript",
+        "Tailwind",
+        "PrismaORM",
+        "PostgreSQL",
+        "Supabase"
+      ],
+      "gitLink": "https://github.com/antoniornneto/coopervaco-system",
+      "link": "https://www.coopervaco.com.br/"
+    },
+    {
+      "id": 3,
+      "title": "Web site/Sistema Coopervaço",
+      "image": "https://i.imgur.com/uP3MzKg.png",
+      "description": "Projeto full-stack com web site comercial e um sistema de gerenciamento de atas.",
+      "stack": [
+        "Next.js",
+        "Typescript",
+        "Tailwind",
+        "PrismaORM",
+        "PostgreSQL",
+        "Supabase"
+      ],
+      "gitLink": "https://github.com/antoniornneto/coopervaco-system",
+      "link": "https://www.coopervaco.com.br/"
+    },
+    {
+      "id": 4,
+      "title": "Web site/Sistema Coopervaço",
+      "image": "https://i.imgur.com/uP3MzKg.png",
+      "description": "Projeto full-stack com web site comercial e um sistema de gerenciamento de atas.",
+      "stack": [
+        "Next.js",
+        "Typescript",
+        "Tailwind",
+        "PrismaORM",
+        "PostgreSQL",
+        "Supabase"
+      ],
+      "gitLink": "https://github.com/antoniornneto/coopervaco-system",
+      "link": "https://www.coopervaco.com.br/"
+    }
+  ]
+}
