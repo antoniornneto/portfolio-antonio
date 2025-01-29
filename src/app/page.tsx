@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import instagram from "../../public/social/icons8-instagram-64.png";
 import linkedin from "../../public/social/icons8-linkedin-50.png";
+import github from "../../public/social/github.png";
 import wpp from "../../public/social/icons8-whatsapp-64.png";
 import Container from "@/components/Container";
 import me from "../../public/antonio.jpg";
@@ -56,21 +57,34 @@ export default function Home() {
       {/* Social Media */}
       <section className="flex pr-32 pb-10 gap-8">
         <Link
+          href={"https://github.com/antoniornneto"}
+          target="_blank"
+          className="animate-[wiggle_1s_ease-in-out_infinite] duration-300 transition-all ease-in-out"
+        >
+          <Image
+            src={github}
+            width={40}
+            height={40}
+            alt="link"
+            className="bg-white rounded-xl p-1"
+          />
+        </Link>
+        <Link
           href={"https://www.linkedin.com/in/antonio-nascimento-851579237/"}
           target="_blank"
-          className="animate-[wiggle_1s_ease-in-out_infinite] hover:scale-125 duration-300 transition-all ease-in-out"
+          className="animate-[wiggle_1s_ease-in-out_infinite] duration-300 transition-all ease-in-out"
         >
           <Image src={linkedin} width={40} height={40} alt="link" />
         </Link>
         <Link
-          className="animate-[wiggle_1s_ease-in-out_infinite] hover:scale-125 duration-300 transition-all ease-in-out"
+          className="animate-[wiggle_1s_ease-in-out_infinite] duration-300 transition-all ease-in-out"
           target="_blank"
           href={"https://www.instagram.com/tonhohawk/"}
         >
           <Image src={instagram} width={40} height={40} alt="link" />
         </Link>
         <Link
-          className="animate-[wiggle_1s_ease-in-out_infinite] hover:scale-125 duration-300 transition-all ease-in-out"
+          className="animate-[wiggle_1s_ease-in-out_infinite] duration-300 transition-all ease-in-out"
           target="_blank"
           href={
             "https://api.whatsapp.com/send/?phone=5527993118171&text&type=phone_number&app_absent=0"
