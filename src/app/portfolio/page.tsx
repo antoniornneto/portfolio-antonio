@@ -5,6 +5,7 @@ import Card from "@/components/Card";
 export default function Home() {
   return (
     <Container
+      titlePage="Portfólio"
       mainStyle={"bg-[url(../../public/portfolio.jpg)] bg-center bg-cover"}
       sectionStyle="flex flex-wrap mx-auto max-w-[1200px] gap-5 items-center max-md:flex-col"
     >

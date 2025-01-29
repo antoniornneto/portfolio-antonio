@@ -3,6 +3,7 @@ import Container from "@/components/Container";
 export default function Page() {
   return (
     <Container
+      titlePage="Sobre mim"
       mainStyle={"bg-[url(../../public/profile.jpg)] bg-cover"}
       sectionStyle="flex items-center px-40"
     >

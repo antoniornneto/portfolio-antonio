@@ -9,6 +9,7 @@ import me from "../../public/antonio.jpg";
 export default function Home() {
   return (
     <Container
+      titlePage="Home"
       mainStyle={"bg-[url(../../public/img.jpg)] bg-center bg-cover"}
       sectionStyle="flex flex-col items-end"
     >
@@ -39,14 +40,14 @@ export default function Home() {
                 className="flex text-2xl justify-center items-center gap-2 border-[1px] w-fit py-2 px-8 rounded-full my-4 hover:bg-[#f1da8b] hover:text-zinc-600 transition-colors ease-in-out duration-500"
                 href={"/resume"}
               >
-                Resume
+                Experiências
               </Link>
 
               <Link
                 className="flex text-2xl justify-center items-center gap-2 border-[1px] w-fit py-2 px-8 rounded-full my-4 hover:bg-[#f1da8b] hover:text-zinc-600 transition-colors ease-in-out duration-500"
                 href={"/portfolio"}
               >
-                Portfolio
+                Portfólio
               </Link>
             </div>
           </div>

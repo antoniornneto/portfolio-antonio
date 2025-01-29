@@ -19,6 +19,7 @@ import eua from "../../../public/languages/usa.png";
 export default function Page() {
   return (
     <Container
+      titlePage="Experiência"
       mainStyle={"bg-[url(../../public/resume.jpg)] bg-cover bg-center"}
       sectionStyle="grid grid-cols-3 grid-rows-2 px-40 max-h-[850px] py-10 gap-5"
     >
