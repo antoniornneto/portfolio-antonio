@@ -18,18 +18,14 @@ export default function Header() {
       name: "Portfolio",
       path: "/portfolio",
     },
-    {
-      name: "Trabalhe Comigo",
-      path: "/workwithme",
-    },
   ];
   return (
     <nav className="sticky z-10 text-[rgb(243,231,219)] w-screen backdrop-filter backdrop-blur-md py-3 shadow-lg">
       <ul className="flex gap-10 w-full justify-center items-center">
         {navList.map((item, index) => (
-          <li key={index}>
+          <li className="" key={index}>
             <Link
-              className="tracking-[3px] uppercase transition-all ease-in-out duration-300 hover:text-[#f1da8b]"
+              className="tracking-[3px] uppercase hover:text-[#f1da8b] hover:border-y-[#f1da8b] hover:border-y-[1px] transition-all ease-in-out duration-200"
               href={item.path}
             >
               {item.name}

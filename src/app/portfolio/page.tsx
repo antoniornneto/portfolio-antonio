@@ -1,4 +1,3 @@
-
 import Container from "@/components/Container";
 import db from "../../../db.json";
 import Card from "@/components/Card";
@@ -6,13 +5,12 @@ import Card from "@/components/Card";
 export default function Home() {
   return (
     <Container
-      mainStyle={"bg-[url(../../public/img.jpg)] bg-center bg-cover"}
-      sectionStyle="flex flex-wrap gap-5 py-5 justify-center"
+      mainStyle={"bg-[url(../../public/portfolio.jpg)] bg-center bg-cover"}
+      sectionStyle="flex flex-wrap mx-auto max-w-[1200px] gap-5 items-center max-md:flex-col"
     >
-      {db.projects.map((project, index) => (
+      {db.projects.map((project) => (
         <Card
-          id={project.id}
-          key={index}
+          key={project.id}
           description={project.description}
           gitLink={project.gitLink}
           image={project.image}

@@ -22,7 +22,7 @@ export default function Page() {
       mainStyle={"bg-[url(../../public/resume.jpg)] bg-cover bg-center"}
       sectionStyle="grid grid-cols-3 grid-rows-2 px-40 max-h-[850px] py-10 gap-5"
     >
-      <section className="backdrop-blur-md rounded-2xl p-5 space-y-5">
+      <section className="backdrop-blur-md rounded-2xl backdrop-contrast-50 p-5 space-y-5">
         <h1 className="text-3xl uppercase font-bold border-b-[#f1da8b] border-b-[2px] pb-1 w-fit">
           Linguagens e Tecnologias
         </h1>
@@ -40,7 +40,7 @@ export default function Page() {
           <PostgresqlOriginalWordmark size={80} />
         </div>
       </section>
-      <section className="backdrop-blur-md rounded-2xl p-5 space-y-5 col-span-1 row-span-2">
+      <section className="backdrop-blur-md rounded-2xl backdrop-contrast-50 p-5 space-y-5 col-span-1 row-span-2">
         <h1 className="text-3xl uppercase font-bold border-b-[#f1da8b] border-b-[2px] pb-1 w-fit">
           Experiência
         </h1>
@@ -56,7 +56,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="backdrop-blur-md rounded-2xl p-5 space-y-5">
+      <section className="backdrop-blur-md rounded-2xl backdrop-contrast-50 p-5 space-y-5">
         <h1 className="text-3xl uppercase font-bold border-b-[#f1da8b] border-b-[2px] pb-1 w-fit">
           Idiomas
         </h1>
@@ -65,7 +65,7 @@ export default function Page() {
           <Image width={80} alt="bandeira do EUA" src={eua} />
         </div>
       </section>
-      <section className="backdrop-blur-md rounded-2xl p-5 space-y-5">
+      <section className="backdrop-blur-md rounded-2xl backdrop-contrast-50 p-5 space-y-5">
         <h1 className="text-3xl uppercase font-bold border-b-[#f1da8b] border-b-[2px] pb-1 w-fit">
           Formação
         </h1>
@@ -74,7 +74,7 @@ export default function Page() {
           <span className="text-sm font-light">Universidade Anhanguera</span>
         </div>
       </section>
-      <section className="backdrop-blur-md rounded-2xl p-5 space-y-5">
+      <section className="backdrop-blur-md rounded-2xl backdrop-contrast-50 p-5 space-y-5">
         <h1 className="text-3xl uppercase font-bold border-b-[#f1da8b] border-b-[2px] pb-1 w-fit">
           Habilidades
         </h1>
