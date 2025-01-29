@@ -55,21 +55,21 @@
     },
     {
       "id": 4,
-      "title": "Lol Match History",
-      "image": "",
-      "description": "Projeto fullstack consumindo API da RIOT Games, feito para que jogadores possam consultar perfis de outros jogadores afim de visualizar o elo, histórico de partidas e afins.",
-      "stack": ["Next.js", "Javascript", "Typescript", "Tailwind", "Node.js"],
-      "gitLink": "https://github.com/antoniornneto/lol-match-history",
-      "link": "https://github.com/antoniornneto/lol-match-history"
-    },
-    {
-      "id": 5,
       "title": "ToDo - Frontend Mentor",
       "image": "https://raw.githubusercontent.com/antoniornneto/todo/refs/heads/main/design/desktop-preview.jpg",
       "description": "Desafio de recriar um projeto de Todo List a partir do layout no figma do site FrontEnd Mentor.",
       "stack": ["Javascript", "HTML", "CSS", "Figma"],
       "gitLink": "https://github.com/antoniornneto/todo?tab=readme-ov-file",
       "link": "https://github.com/antoniornneto/todo?tab=readme-ov-file"
+    },
+    {
+      "id": 5,
+      "title": "Lol Match History",
+      "image": "",
+      "description": "Projeto fullstack consumindo API da RIOT Games, feito para que jogadores possam consultar perfis de outros jogadores afim de visualizar o elo, histórico de partidas e afins.",
+      "stack": ["Next.js", "Javascript", "Typescript", "Tailwind", "Node.js"],
+      "gitLink": "https://github.com/antoniornneto/lol-match-history",
+      "link": "https://github.com/antoniornneto/lol-match-history"
     },
     {
       "id": 6,
