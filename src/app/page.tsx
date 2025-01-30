@@ -70,7 +70,7 @@ export default function Home() {
           />
         </Link>
         <Link
-          href={"https://www.linkedin.com/in/antonio-nascimento-851579237/"}
+          href={"https://www.linkedin.com/in/antoniornneto/"}
           target="_blank"
           className="animate-[wiggle_1s_ease-in-out_infinite] duration-300 transition-all ease-in-out"
         >
