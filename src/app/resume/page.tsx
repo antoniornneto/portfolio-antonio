@@ -47,7 +47,7 @@ export default function Page() {
         </h1>
         <div className="flex gap-5 flex-wrap py-5">
           <div className="rounded-full bg-[#f1da8b] w-20 h-20 flex flex-col items-center justify-center text-black">
-            <p>2023</p>
+            <p>2025</p>
             <p>-</p>
             <p>2024</p>
           </div>
