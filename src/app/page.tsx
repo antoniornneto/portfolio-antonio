@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import instagram from "../../public/social/icons8-instagram-64.png";
+// import instagram from "../../public/social/icons8-instagram-64.png";
 import linkedin from "../../public/social/icons8-linkedin-50.png";
 import github from "../../public/social/github.png";
 import wpp from "../../public/social/icons8-whatsapp-64.png";
@@ -26,7 +26,7 @@ export default function Home() {
               className="absolute object-cover w-full h-full rounded-full"
             />
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col ">
             <h1 className="text-9xl uppercase font-light">Antonio</h1>
             <h1 className="text-9xl uppercase font-bold">Nascimento</h1>
             <h2 className="text-4xl tracking-[15px]">
@@ -76,13 +76,13 @@ export default function Home() {
         >
           <Image src={linkedin} width={40} height={40} alt="link" />
         </Link>
-        <Link
+        {/* <Link
           className="animate-[wiggle_1s_ease-in-out_infinite] duration-300 transition-all ease-in-out"
           target="_blank"
           href={"https://www.instagram.com/tonhohawk/"}
         >
           <Image src={instagram} width={40} height={40} alt="link" />
-        </Link>
+        </Link> */}
         <Link
           className="animate-[wiggle_1s_ease-in-out_infinite] duration-300 transition-all ease-in-out"
           target="_blank"

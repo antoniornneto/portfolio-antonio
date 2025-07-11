@@ -11,12 +11,19 @@ import {
   ReactOriginalWordmark,
   SassOriginal,
   ExpressOriginalWordmark,
+  VitejsOriginal,
+  BulmaPlain,
+  FirebaseOriginal,
+  SupabaseOriginal,
+  TailwindcssOriginal,
 } from "devicons-react";
 import Image from "next/image";
 import brazil from "../../../public/languages/brazil-.png";
 import eua from "../../../public/languages/usa.png";
+import Experience from "@/components/Experience";
 
 export default function Page() {
+  const size = 70;
   return (
     <Container
       titlePage="Experiência"
@@ -28,34 +35,49 @@ export default function Page() {
           Linguagens e Tecnologias
         </h1>
         <div className="flex flex-wrap gap-5 justify-center">
-          <JavascriptOriginal size={80} />
-          <NodejsOriginalWordmark size={80} />
-          <ExpressOriginalWordmark size={80} />
-          <TypescriptOriginal size={80} />
-          <ReactOriginalWordmark size={80} />
-          <NextjsOriginalWordmark size={80} />
-          <Html5OriginalWordmark size={80} />
-          <Css3OriginalWordmark size={80} />
-          <SassOriginal size={80} />
-          <PrismaOriginalWordmark size={80} />
-          <PostgresqlOriginalWordmark size={80} />
+          <JavascriptOriginal size={size} />
+          <NodejsOriginalWordmark size={size} />
+          <ExpressOriginalWordmark size={size} />
+          <TypescriptOriginal size={size} />
+          <ReactOriginalWordmark size={size} />
+          <NextjsOriginalWordmark size={size} />
+          <Html5OriginalWordmark size={size} />
+          <Css3OriginalWordmark size={size} />
+          <SassOriginal size={size} />
+          <PrismaOriginalWordmark size={size} />
+          <PostgresqlOriginalWordmark size={size} />
+          <VitejsOriginal size={size} />
+          <BulmaPlain size={size} />
+          <FirebaseOriginal size={size} />
+          <SupabaseOriginal size={size} />
+          <TailwindcssOriginal size={size} />
         </div>
       </section>
       <section className="backdrop-blur-md rounded-2xl backdrop-contrast-50 p-5 space-y-5 col-span-1 row-span-2">
         <h1 className="text-3xl uppercase font-bold border-b-[#f1da8b] border-b-[2px] pb-1 w-fit">
           Experiência
         </h1>
-        <div className="flex gap-5 flex-wrap py-5">
-          <div className="rounded-full bg-[#f1da8b] w-20 h-20 flex flex-col items-center justify-center text-black">
-            <p>2025</p>
-            <p>-</p>
-            <p>2024</p>
-          </div>
-          <div>
-            <p className="text-xl">Desenvolvedor FullStack - Freelancer</p>
-            <p className="text-ms font-light">Dada Inova</p>
-          </div>
-        </div>
+        <Experience
+          startDate="02/2025"
+          endDate="07/2025"
+          vacancy="Desenvolvedor FullStack - Freelancer"
+          description="Keap Staff - Website comercial, CRM e app mobile."
+          stacks={[
+            "next",
+            "ts",
+            "prisma",
+            "postgreesql",
+            "supabase",
+            "tailwind",
+          ]}
+        />
+        <Experience
+          startDate="01/2024"
+          endDate="02/2025"
+          vacancy="Desenvolvedor FullStack - Freelancer"
+          description="Dada Inova - Website comercial e Sistema de gerenciamento"
+          stacks={["react", "vite", "js", "nodeEX", "bulma", "firebase"]}
+        />
       </section>
       <section className="backdrop-blur-md rounded-2xl backdrop-contrast-50 p-5 space-y-5">
         <h1 className="text-3xl uppercase font-bold border-b-[#f1da8b] border-b-[2px] pb-1 w-fit">
@@ -72,7 +94,9 @@ export default function Page() {
         </h1>
         <div className="flex flex-wrap py-5 flex-col">
           <span className="text-xl">Análise e Desenvolvimento de Sistemas</span>
-          <span className="text-sm font-light">Universidade Anhanguera</span>
+          <span className="text-sm font-light">
+            Universidade Anhanguera (08/2023 - 12/2025)
+          </span>
         </div>
       </section>
       <section className="backdrop-blur-md rounded-2xl backdrop-contrast-50 p-5 space-y-5">
@@ -82,7 +106,8 @@ export default function Page() {
         <div className="flex flex-wrap py-5 flex-col">
           <span className="text-xl font-light">
             Clean Code - Mobile First - Git/GitHub - Comunicativo - Proatividade
-            - Trabalho em equipe
+            - Trabalho em equipe - Auto-didata - Organizado - Facilidade em
+            resolver problemas
           </span>
         </div>
       </section>
