@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <Container
       titlePage="Portfólio"
-      mainStyle={"bg-[url(../../public/portfolio.jpg)] bg-center bg-cover"}
-      sectionStyle="flex flex-wrap mx-auto max-w-[1200px] gap-5 items-center max-md:flex-col"
+      mainStyle={"bg-[url(../../public/portfolio.jpg)] bg-center bg-cover xl:h-screen"}
+      sectionStyle="flex flex-col px-2 gap-5 items-center lg:flex-row lg:flex-wrap lg:justify-center"
     >
       {db.projects.map((project) => (
         <Card
@@ -20,6 +20,8 @@ export default function Home() {
           title={project.title}
         />
       ))}
+
+      <div className="flex"></div>
     </Container>
   );
 }

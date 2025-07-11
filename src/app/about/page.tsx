@@ -4,10 +4,10 @@ export default function Page() {
   return (
     <Container
       titlePage="Sobre mim"
-      mainStyle={"bg-[url(../../public/profile.jpg)] bg-cover"}
-      sectionStyle="flex items-center px-40"
+      mainStyle={"bg-[url(../../public/profile.jpg)] bg-cover md:h-screen"}
+      sectionStyle="flex items-center px-0 sm:px-40"
     >
-      <section className="w-fit min-h-[700px] my-10 flex flex-col justify-between backdrop-blur-sm rounded-2xl p-5">
+      <section className="w-fit my-10 flex flex-col justify-between backdrop-blur-sm rounded-2xl p-5">
         <div>
           <h1 className="text-5xl uppercase font-bold border-b-[#f1da8b] border-b-[2px] pb-1 w-fit">
             Sobre
@@ -16,13 +16,13 @@ export default function Page() {
             Antonio Nascimento, 30 anos - antonionascneto@gmail.com
           </p>
         </div>
-        <p className="w-[500px] text-xl pt-10 text-justify">
+        <p className="pt-10 text-justify md:text-xl md:w-[500px]">
           Desenvolvedor Web com experiência a mais de um ano em desenvolvimento,
           manutenção e sustentação de sistemas com tecnologias Fullstack,
           aplicando meu conhecimento técnico e minha habilidade em resolver
           problemas de forma eficaz.
         </p>
-        <p className="w-[500px] text-xl pt-5 text-justify">
+        <p className="pt-5 text-justify md:text-xl md:w-[500px]">
           Tenho experiência na área de FrontEnd com a linguagem de programação
           Javascript/Typescript e tecnologias como React, React com Vite, Next,
           que me permitem criar interfaces e implementações inovadoras,
@@ -30,7 +30,7 @@ export default function Page() {
           para formulários, ContextAPI e Zustand para controle de estados, e
           Tailwind e SASS para estilização.
         </p>
-        <p className="w-[500px] text-xl pt-5 text-justify">
+        <p className="pt-5 text-justify md:text-xl md:w-[500px]">
           Na área de Backend, possuo experiência com foco em desenvolvimento e
           integração de APIs escaláveis utilizando Node.js, Express.JS, Axios,
           Postman, API Router, PrismaORM, PostgreSQL e MongoDB. Minha abordagem

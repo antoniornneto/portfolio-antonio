@@ -23,8 +23,8 @@ export default function Card({
   link,
 }: ProjectCardProps) {
   return (
-    <section className="backdrop-blur-md rounded-2xl backdrop-contrast-50 flex flex-col max-w-96 group overflow-hidden max-h-[420px] h-full transition-colors">
-      <Link href={link} target="_blank">
+    <section className="backdrop-blur-md rounded-2xl backdrop-contrast-50 flex flex-col max-w-96 group overflow-hidden min-h-[420px] transition-colors">
+      <Link className="flex-2" href={link} target="_blank">
         <div className="relative overflow-hidden rounded-t-2xl">
           <Image
             src={image || notfoundimage}
@@ -38,9 +38,9 @@ export default function Card({
           </div>
         </div>
       </Link>
-      <div className="flex flex-col justify-between p-3 h-full">
+      <div className="flex-1 p-2 flex flex-col justify-between gap-1">
         <div className="flex gap-2 items-center">
-          <h1 className="text-xl font-bold">{title}</h1>
+          <h1 className="font-bold md:text-xl">{title}</h1>
           <Link
             className="bg-zinc-200 p-2 rounded-xl"
             target="_blank"
@@ -61,7 +61,7 @@ export default function Card({
           ))}
         </div>
         <Link
-          className="flex items-center justify-center bg-black rounded-xl p-2 text-lg"
+          className="flex items-center justify-center bg-black rounded-xl p-2 text-lg hover:bg-black/70 ease-in-out transition-all duration-400"
           href={link}
           target="_blank"
         >

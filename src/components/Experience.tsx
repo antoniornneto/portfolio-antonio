@@ -15,15 +15,18 @@ export default function Experience({
   endDate: string;
 }) {
   return (
-    <div key={`experience-${vacancy}`} className="flex gap-5 flex-wrap py-5">
+    <div
+      key={`experience-${vacancy}`}
+      className="flex justify-center gap-5 flex-wrap py-5 md:justify-normal"
+    >
       <div className="rounded-full bg-[#f1da8b] w-20 h-20 flex flex-col items-center justify-center text-black">
         <p>{endDate}</p>
         <p>-</p>
         <p>{startDate}</p>
       </div>
       <div>
-        <p className="text-xl">{vacancy}</p>
-        <p className="text-ms font-medium">{description}</p>
+        <p className="font-bold md:text-xl md:font-normal">{vacancy}</p>
+        <p className="md:text-ms md:font-medium">{description}</p>
         <div className="flex gap-2 items-center">
           <p className="text-ms font-light">Stack:</p>
           {stackComponents.map((component) =>

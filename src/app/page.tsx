@@ -11,13 +11,13 @@ export default function Home() {
   return (
     <Container
       titlePage="Home"
-      mainStyle={"bg-[url(../../public/img.jpg)] bg-center bg-cover"}
-      sectionStyle="flex flex-col items-end"
+      mainStyle={"bg-[url(../../public/img.jpg)] bg-center bg-cover h-screen"}
+      sectionStyle="flex flex-col lg:items-end py-5"
     >
       {/* Hero section */}
-      <section className="flex flex-col pr-32 my-auto">
-        <div className="flex gap-14">
-          <div className="w-[300px] h-[300px] relative cursor-pointer hover:scale-125 duration-300 transition-all ease-in-out">
+      <section className="flex flex-col my-auto xl:pr-32">
+        <div className="flex flex-col items-center gap-14 lg:flex-row lg:items-start">
+          <div className="hidden w-[300px] h-[300px] relative cursor-pointer hover:scale-125 duration-300 transition-all ease-in-out md:flex">
             <Image
               alt="Foto do Antonio"
               src={me}
@@ -26,26 +26,32 @@ export default function Home() {
               className="absolute object-cover w-full h-full rounded-full"
             />
           </div>
-          <div className="flex flex-col ">
-            <h1 className="text-9xl uppercase font-light">Antonio</h1>
-            <h1 className="text-9xl uppercase font-bold">Nascimento</h1>
-            <h2 className="text-4xl tracking-[15px]">
-              Full-Stack Developer
-              <span className="text-4xl tracking-[30px]">...</span>
-              <span className="text-4xl tracking-[30px] animate-[blink_1s_infinite]">
-                |
-              </span>
-            </h2>
-            <div className="flex gap-5">
+          <div className="flex flex-col">
+            <div>
+              <h1 className="text-5xl lg:text-7xl xl:text-9xl uppercase font-light">
+                Antonio
+              </h1>
+              <h1 className="text-5xl lg:text-7xl xl:text-9xl uppercase font-bold">
+                Nascimento
+              </h1>
+              <h2 className="tracking-widest md:tracking-[15px]">
+                Full-Stack Developer
+                <span className="tracking-widest md:tracking-[30px]">...</span>
+                <span className="md:tracking-[30px] animate-[blink_1s_infinite]">
+                  |
+                </span>
+              </h2>
+            </div>
+            <div className="flex flex-col items-center md:flex-row md:gap-5">
               <Link
-                className="flex text-2xl justify-center items-center gap-2 border-[1px] w-fit py-2 px-8 rounded-full my-4 hover:bg-[#f1da8b] hover:text-zinc-600 transition-colors ease-in-out duration-500"
+                className="min-w-44 flex text-2xl justify-center items-center gap-2 border-[1px] w-fit py-2 px-8 rounded-full my-4 hover:bg-[#f1da8b] hover:text-zinc-600 transition-colors ease-in-out duration-500"
                 href={"/resume"}
               >
                 Experiências
               </Link>
 
               <Link
-                className="flex text-2xl justify-center items-center gap-2 border-[1px] w-fit py-2 px-8 rounded-full my-4 hover:bg-[#f1da8b] hover:text-zinc-600 transition-colors ease-in-out duration-500"
+                className="min-w-44 flex text-2xl justify-center items-center gap-2 border-[1px] w-fit py-2 px-8 rounded-full my-4 hover:bg-[#f1da8b] hover:text-zinc-600 transition-colors ease-in-out duration-500"
                 href={"/portfolio"}
               >
                 Portfólio
@@ -55,7 +61,7 @@ export default function Home() {
         </div>
       </section>
       {/* Social Media */}
-      <section className="flex pr-32 pb-10 gap-8">
+      <section className="flex justify-center gap-5 md:justify-end md:pr-32 md:pb-10 md:gap-8">
         <Link
           href={"https://github.com/antoniornneto"}
           target="_blank"

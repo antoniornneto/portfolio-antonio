@@ -12,7 +12,7 @@ export default function Container({
   titlePage: string;
 }) {
   return (
-    <main className={`${mainStyle} h-screen flex flex-col text-white`}>
+    <main className={`${mainStyle} flex flex-col text-white`}>
       <title>{titlePage}</title>
       <Header />
       <div className={`h-full ${sectionStyle}`}>{children}</div>
