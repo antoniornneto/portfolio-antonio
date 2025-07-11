@@ -19,7 +19,7 @@ export default function Experience({
       key={`experience-${vacancy}`}
       className="flex justify-center gap-5 flex-wrap py-5 md:justify-normal"
     >
-      <div className="rounded-full bg-[#f1da8b] w-20 h-20 flex flex-col items-center justify-center text-black">
+      <div className="rounded-full text-sm bg-[#f1da8b] w-20 h-20 flex flex-col items-center justify-center text-black">
         <p>{endDate}</p>
         <p>-</p>
         <p>{startDate}</p>
