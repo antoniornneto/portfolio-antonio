@@ -1,6 +1,9 @@
 export type StackName =
   | "cssEX"
   | "htmlEX"
+  | "python"
+  | "django"
+  | "flask"
   | "js"
   | "nextEX"
   | "nodeEX"

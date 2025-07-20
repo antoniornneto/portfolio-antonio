@@ -17,6 +17,9 @@ import {
   PrismaOriginal,
   VitejsOriginal,
   BulmaPlain,
+  FlaskOriginal,
+  DjangorestPlainWordmark,
+  PythonOriginal,
   FirebaseOriginal,
   ReactOriginal,
 } from "devicons-react";
@@ -24,6 +27,18 @@ import {
 const size = 25;
 
 export const stackComponents = [
+  {
+    name: "python",
+    component: <PythonOriginal size={size} />,
+  },
+  {
+    name: "flask",
+    component: <FlaskOriginal size={size} />,
+  },
+  {
+    name: "django",
+    component: <DjangorestPlainWordmark size={size} />,
+  },
   {
     name: "cssEX",
     component: <Css3OriginalWordmark size={size} />,

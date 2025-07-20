@@ -16,6 +16,9 @@ import {
   FirebaseOriginal,
   SupabaseOriginal,
   TailwindcssOriginal,
+  FlaskOriginal,
+  DjangorestPlainWordmark,
+  PythonOriginal,
 } from "devicons-react";
 import Image from "next/image";
 import brazil from "../../../public/languages/brazil-.png";
@@ -23,11 +26,13 @@ import eua from "../../../public/languages/usa.png";
 import Experience from "@/components/Experience";
 
 export default function Page() {
-  const size = 65;
+  const size = 55;
   return (
     <Container
       titlePage="Experiência"
-      mainStyle={"bg-[url(../../public/resume.jpg)] bg-cover bg-center xl:h-screen"}
+      mainStyle={
+        "bg-[url(../../public/resume.jpg)] bg-cover bg-center xl:h-screen"
+      }
       sectionStyle="flex flex-col px-2 py-10 gap-5 lg:grid lg:grid-cols-3 lg:grid-rows-2 lg:px-24 lg:max-h-[850px]"
     >
       <section className="backdrop-blur-md rounded-2xl backdrop-contrast-50 p-5 space-y-5">
@@ -39,6 +44,9 @@ export default function Page() {
           <NodejsOriginalWordmark size={size} />
           <ExpressOriginalWordmark size={size} />
           <TypescriptOriginal size={size} />
+          <FlaskOriginal size={size} />
+          <DjangorestPlainWordmark size={size} />
+          <PythonOriginal size={size} />
           <ReactOriginalWordmark size={size} />
           <NextjsOriginalWordmark size={size} />
           <Html5OriginalWordmark size={size} />
@@ -61,7 +69,23 @@ export default function Page() {
           startDate="02/2025"
           endDate="07/2025"
           vacancy="Desenvolvedor FullStack - Freelancer"
-          description="Keap Staff - Website comercial, CRM e app mobile."
+          description="Keap Staff / Bravo - Website comercial, CRM e app mobile."
+          stacks={[
+            "react",
+            "vite",
+            "js",
+            "python",
+            "nodeEX",
+            "bulma",
+            "firebase",
+            "flask",
+          ]}
+        />
+        <Experience
+          startDate="01/2024"
+          endDate="02/2025"
+          vacancy="Desenvolvedor FullStack - Freelancer"
+          description="Dada Inova - Website comercial e Sistema de gerenciamento"
           stacks={[
             "next",
             "ts",
@@ -70,13 +94,6 @@ export default function Page() {
             "supabase",
             "tailwind",
           ]}
-        />
-        <Experience
-          startDate="01/2024"
-          endDate="02/2025"
-          vacancy="Desenvolvedor FullStack - Freelancer"
-          description="Dada Inova - Website comercial e Sistema de gerenciamento"
-          stacks={["react", "vite", "js", "nodeEX", "bulma", "firebase"]}
         />
       </section>
       <section className="backdrop-blur-md rounded-2xl backdrop-contrast-50 p-5 space-y-5">
