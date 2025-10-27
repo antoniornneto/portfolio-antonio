@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Oswald } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 
-const oswaldSans = Oswald({
+const poppinsSans = Poppins({
   weight: ["200", "300", "400", "500", "600", "700"],
   subsets: ["latin"],
 });
@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${oswaldSans.className} antialiased min-h-screen box-border`}
+        className={`${poppinsSans.className} antialiased min-h-screen box-border`}
       >
         {children}
       </body>
