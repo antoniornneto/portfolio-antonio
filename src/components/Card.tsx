@@ -34,7 +34,7 @@ export default function Card({
     >
       <div className="relative overflow-hidden rounded-lg h-[180px] md:h-[200px] lg:h-[220px]">
         <Image
-          src={image || `/image-not-found.png`}
+          src={image || `/Image-not-found.png`}
           alt={title}
           width={400}
           height={220}
