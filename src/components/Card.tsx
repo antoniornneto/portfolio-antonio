@@ -1,8 +1,6 @@
-import { GithubOriginal } from "devicons-react";
-import { ExternalLink } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
-import notfoundimage from "../../public/Image-not-found.png";
+import { Button } from "./Button";
+import github from "../../public/github.png";
 
 type ProjectCardProps = {
   id?: number;
@@ -23,51 +21,66 @@ export default function Card({
   link,
 }: ProjectCardProps) {
   return (
-    <section className="backdrop-blur-md rounded-2xl backdrop-contrast-50 flex flex-col max-w-96 group overflow-hidden min-h-[420px] transition-colors">
-      <Link className="flex-2" href={link} target="_blank">
-        <div className="relative overflow-hidden rounded-t-2xl">
-          <Image
-            src={image || notfoundimage}
-            alt={title}
-            width={400}
-            height={200}
-            className="object-fill w-full h-[200px] transition-transform duration-300 group-hover:scale-105"
-          />
-          <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-            <ExternalLink className="text-white w-6 h-6" />
-          </div>
+    <div
+      className="
+        flex flex-col justify-between
+        backdrop-blur-md rounded-2xl
+        bg-white/5 overflow-hidden
+        max-w-72 lg:max-w-96
+        h-[460px] md:h-[480px] lg:h-[520px]
+        p-3
+        transition-all duration-200
+      "
+    >
+      <div className="relative overflow-hidden rounded-lg h-[180px] md:h-[200px] lg:h-[220px]">
+        <Image
+          src={image || `/image-not-found.png`}
+          alt={title}
+          width={400}
+          height={220}
+          className="object-cover w-full h-full"
+        />
+      </div>
+
+      <div className="flex flex-col flex-1 justify-between mt-4">
+        <div className="flex flex-col gap-2 flex-1">
+          <h1 className="font-medium tracking-wider text-[#DD9700] leading-tight">
+            {title}
+          </h1>
+          <p className="text-sm font-extralight tracking-wider leading-snug line-clamp-4">
+            {description}
+          </p>
         </div>
-      </Link>
-      <div className="flex-1 p-2 flex flex-col justify-between gap-1">
-        <div className="flex gap-2 items-center">
-          <h1 className="font-bold md:text-xl">{title}</h1>
-          <Link
-            className="bg-zinc-200 p-2 rounded-xl"
-            target="_blank"
-            href={gitLink}
-          >
-            <GithubOriginal />
-          </Link>
-        </div>
-        <p className="text-sm font-light text-zinc-100">{description}</p>
-        <div className="flex flex-wrap gap-2">
-          {stack.map((item, index) => (
-            <p
-              className="bg-zinc-300 text-xs text-zinc-900 rounded-2xl px-2"
-              key={index}
+
+        <div className="flex flex-wrap gap-2 mt-3">
+          {stack.map((value) => (
+            <span
+              key={`${title}_${value}`}
+              className="text-black bg-[#DD9700] px-2 py-1 rounded-md text-xs font-medium"
             >
-              {item}
-            </p>
+              {value}
+            </span>
           ))}
         </div>
-        <Link
-          className="flex items-center justify-center bg-black rounded-xl p-2 text-lg hover:bg-black/70 ease-in-out transition-all duration-400"
-          href={link}
-          target="_blank"
-        >
-          Visualizar Projeto
-        </Link>
       </div>
-    </section>
+
+      <div className="flex gap-2 items-center mt-4">
+        <Button
+          href={link}
+          variant="rounded"
+          classNameLink="flex-1"
+          className="w-full h-10"
+        >
+          visualizar
+        </Button>
+        <Button
+          variant="rounded"
+          className="w-10 h-10 flex items-center justify-center"
+          href={gitLink}
+        >
+          <Image src={github} className="w-5 h-5" alt="logo do github" />
+        </Button>
+      </div>
+    </div>
   );
 }

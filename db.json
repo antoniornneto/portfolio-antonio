@@ -2,32 +2,49 @@
   "projects": [
     {
       "id": 1,
+      "title": "Portal de Documentos do Aluno",
+      "image": "/login.jpg",
+      "description": "Projeto fullstack que simula um portal escolar mobile que permite o usuário visualizar e enviar documentos.",
+      "stack": [
+        "React Native",
+        "Typescript",
+        "NativeWind",
+        "Android",
+        "Mobile",
+        "Expo",
+        "iOS"
+      ],
+      "gitLink": "https://github.com/antoniornneto/desafio-proesc-mobile",
+      "link": ""
+    },
+    {
+      "id": 2,
       "title": "Web site/Sistema Coopervaço",
       "image": "https://i.imgur.com/nQNBCSE.jpeg",
       "description": "Projeto full-stack com web site comercial e um sistema de gerenciamento de atas.",
       "stack": [
-        "Next.js",
         "Typescript",
-        "Tailwind",
-        "PrismaORM",
         "PostgreSQL",
-        "Supabase",
+        "PrismaORM",
         "ShadCN UI",
+        "Tailwind",
+        "Supabase",
+        "Next.js",
         "Vercel"
       ],
       "gitLink": "https://github.com/antoniornneto/coopervaco-system",
       "link": "https://www.coopervaco.com.br/"
     },
     {
-      "id": 2,
+      "id": 3,
       "title": "Website comercial para Arquitetos",
       "image": "https://i.imgur.com/y1o1IMR.jpeg",
       "description": "Projeto de website comercial pensado em empresas ou negócios do ramo civil.",
       "stack": [
-        "Next.js",
         "Typescript",
-        "Tailwind",
         "ShadCN UI",
+        "Tailwind",
+        "Next.js",
         "Vercel",
         "Figma"
       ],
@@ -35,50 +52,49 @@
       "link": "https://architect-website-eosin.vercel.app/"
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "Gerenciamento de estoque",
       "image": "https://i.imgur.com/hajHayc.jpeg",
-      "description": "Projeto full-stack de menu online (design em mobile) integrado a um sistema com dashboard de pedidos e controle de estoque automatizado.",
+      "description": "Projeto full-stack de menu online com dashboard e controle de stocks.",
       "stack": [
-        "Next.js",
         "Typescript",
-        "Tailwind",
-        "PrismaORM",
         "PostgreSQL",
-        "Supabase",
+        "PrismaORM",
         "ShadCN UI",
-        "Vercel",
-        "Mobile first"
+        "Tailwind",
+        "Supabase",
+        "Next.js",
+        "Vercel"
       ],
       "gitLink": "https://github.com/antoniornneto/menu-online",
       "link": "https://menu-online-eta.vercel.app/"
     },
     {
-      "id": 4,
+      "id": 5,
       "title": "ToDo - Frontend Mentor",
       "image": "https://raw.githubusercontent.com/antoniornneto/todo/refs/heads/main/design/desktop-preview.jpg",
       "description": "Desafio de recriar um projeto de Todo List a partir do layout no figma do site FrontEnd Mentor.",
-      "stack": ["Javascript", "HTML", "CSS", "Figma"],
+      "stack": ["Javascript", "Figma", "HTML", "CSS"],
       "gitLink": "https://github.com/antoniornneto/todo?tab=readme-ov-file",
       "link": "https://github.com/antoniornneto/todo?tab=readme-ov-file"
     },
     {
-      "id": 5,
+      "id": 6,
       "title": "Lol Match History",
       "image": "",
       "description": "Projeto fullstack consumindo API da RIOT Games, feito para que jogadores possam consultar perfis de outros jogadores afim de visualizar o elo, histórico de partidas e afins.",
-      "stack": ["Next.js", "Javascript", "Typescript", "Tailwind", "Node.js"],
+      "stack": ["Javascript", "Typescript", "Tailwind", "Next.js", "Node.js"],
       "gitLink": "https://github.com/antoniornneto/lol-match-history",
-      "link": "https://github.com/antoniornneto/lol-match-history"
+      "link": ""
     },
     {
-      "id": 6,
+      "id": 7,
       "title": "Next Auth",
       "image": "",
       "description": "Projeto fullstack praticando o Next Auth, ferramenta Serverless de autenticação para projetos em NextJS.",
-      "stack": ["Next.js", "NextAuth", "Typescript", "Tailwind"],
+      "stack": ["Typescript", "NextAuth", "Tailwind", "Next.js"],
       "gitLink": "https://github.com/antoniornneto/next-auth",
-      "link": "https://github.com/antoniornneto/next-auth"
+      "link": ""
     }
   ]
 }

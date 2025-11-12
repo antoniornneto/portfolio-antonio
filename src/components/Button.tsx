@@ -1,12 +1,14 @@
 import Link from "next/link";
-import { ReactNode } from "react";
+import { ButtonHTMLAttributes, ReactNode } from "react";
 
-type Button = {
+type Button = ButtonHTMLAttributes<HTMLButtonElement> & {
   children: ReactNode;
   href?: string;
   key?: string;
   target?: "_self" | "_blank";
-  type: "normal" | "rounded";
+  variant: "normal" | "rounded";
+  className?: string;
+  classNameLink?: string;
 };
 
 export const Button = ({
@@ -14,16 +16,18 @@ export const Button = ({
   href,
   key,
   target = "_self",
-  type,
+  variant,
+  className,
+  classNameLink,
 }: Button) => {
   if (href) {
     return (
-      <Link target={target} href={href}>
+      <Link target={target} href={href} className={classNameLink}>
         <button
           key={key}
-          className={`border-[1px] border-[#9C5300] rounded-full max-[425px]:min-w-40 bg-[#FFFFFF12] hover:bg-[#DD970080] hover:border-[#E59500] transition-all ease-out duration-300 active:bg-[#DD970059] active:border-[#855600] ${
-            type === "rounded" ? "p-2" : "px-6 py-2"
-          }`}
+          className={`border-[1px] border-[#9C5300] rounded-full bg-[#FFFFFF12] hover:bg-[#DD970080] hover:border-[#E59500] transition-all ease-out duration-300 active:bg-[#DD970059] active:border-[#855600] ${
+            variant === "rounded" ? "p-2" : "px-6 py-2"
+          } ${className}`}
         >
           {children}
         </button>
@@ -32,7 +36,7 @@ export const Button = ({
   } else {
     return (
       <button
-        className={`border-[1px] border-[#9C5300] rounded-full px-6 py-2 bg-[#FFFFFF12] hover:bg-[#DD970080] hover:border-[#E59500] transition-all ease-out duration-300 active:bg-[#DD970059] active:border-[#855600]`}
+        className={`border-[1px] border-[#9C5300] rounded-full bg-[#FFFFFF12] hover:bg-[#DD970080] hover:border-[#E59500] transition-all ease-out text-center duration-300 active:bg-[#DD970059] active:border-[#855600] ${className}`}
       >
         {children}
       </button>

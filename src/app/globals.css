@@ -85,3 +85,18 @@
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes shine {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-shine {
+  background: linear-gradient(90deg, #dd970000, #dd9700, #dd970000);
+  background-size: 200% auto;
+  animation: shine 8s linear infinite;
+}

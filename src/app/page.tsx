@@ -1,12 +1,11 @@
 import Image from "next/image";
 // import instagram from "../../public/social/icons8-instagram-64.png";
-import linkedin from "../../public/social/icons8-linkedin-50.png";
-import github from "../../public/social/github-white.png";
-import wpp from "../../public/social/icons8-whatsapp-64.png";
+
 import Container from "@/components/Container";
 import me from "../../public/antonio.jpg";
 import { Button } from "@/components/Button";
 import Link from "next/link";
+import { socialMediaContents } from "@/lib/utils";
 
 export default function Home() {
   const btnContents = [
@@ -14,28 +13,10 @@ export default function Home() {
     { id: "2", txt: "portfólio", href: "/portfolio" },
   ];
 
-  const socialMediaContents = [
-    {
-      id: "linkedin",
-      href: "https://www.linkedin.com/in/antoniornneto/",
-      source: linkedin,
-    },
-    {
-      id: "github",
-      href: "https://github.com/antoniornneto",
-      source: github,
-    },
-    {
-      id: "whatsapp",
-      href: "https://api.whatsapp.com/send/?phone=5527993118171&text&type=phone_number&app_absent=0",
-      source: wpp,
-    },
-  ];
   return (
     <Container
       titlePage="Home"
-      mainStyle={"bg-[url(../../public/img.jpg)] bg-center bg-cover h-screen"}
-      sectionStyle="flex flex-col items-center justify-center"
+      sectionStyle="flex flex-col items-center justify-center flex-1"
     >
       {/* Hero section */}
       <section className="flex">
@@ -61,7 +42,13 @@ export default function Home() {
             {/* buttons */}
             <div className="flex flex-col gap-5 items-center md:flex-row">
               {btnContents.map((btn) => (
-                <Button type="normal" key={btn.id} href={btn.href}>
+                <Button
+                  classNameLink="flex-1"
+                  className="max-[425px]:min-w-40"
+                  variant="normal"
+                  key={btn.id}
+                  href={btn.href}
+                >
                   {btn.txt}
                 </Button>
               ))}
