@@ -30,7 +30,7 @@ O principal objetivo deste portfólio é servir como uma vitrine profissional, a
 
 src/
 ├── app/
-│ ├── page.tsx # Página principal
+| ├── page.tsx # Página principal
 │ └── components/ # Componentes reutilizáveis
 ├── styles/
 └── ...
