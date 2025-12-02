@@ -57,7 +57,7 @@ export default function Home() {
         </div>
       </section>
       {/* Social Media */}
-      <section className="flex flex-col absolute bottom-10 right-64">
+      <section className="flex flex-col absolute bottom-10 right-64 pl-4 pb-4">
         <p>contato</p>
         <div className="flex mt-4 gap-3">
           {socialMediaContents.map((socialMedia) => (

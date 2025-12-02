@@ -53,6 +53,23 @@
     },
     {
       "id": 4,
+      "title": "Totem Interativo Autoglass",
+      "image": "/projetos/autoglass.png",
+      "description": "Projeto criado para a empresa Autoglass para servir de aplicativo de perguntas e respostas para uma feira comercial.",
+      "stack": [
+        "React Native",
+        "Typescript",
+        "NativeWind",
+        "Android",
+        "Mobile",
+        "Expo",
+        "iOS"
+      ],
+      "gitLink": "https://github.com/antoniornneto/totem-autoglass",
+      "link": ""
+    },
+    {
+      "id": 5,
       "title": "Gerenciamento de estoque",
       "image": "https://i.imgur.com/hajHayc.jpeg",
       "description": "Projeto full-stack de menu online com dashboard e controle de stocks.",
@@ -70,30 +87,32 @@
       "link": "https://menu-online-eta.vercel.app/"
     },
     {
-      "id": 5,
+      "id": 6,
       "title": "ToDo - Frontend Mentor",
       "image": "https://raw.githubusercontent.com/antoniornneto/todo/refs/heads/main/design/desktop-preview.jpg",
       "description": "Desafio de recriar um projeto de Todo List a partir do layout no figma do site FrontEnd Mentor.",
-      "stack": ["Javascript", "Figma", "HTML", "CSS"],
+      "stack": [
+        "Javascript",
+        "Figma",
+        "HTML",
+        "CSS"
+      ],
       "gitLink": "https://github.com/antoniornneto/todo?tab=readme-ov-file",
       "link": "https://github.com/antoniornneto/todo?tab=readme-ov-file"
     },
     {
-      "id": 6,
+      "id": 7,
       "title": "Lol Match History",
       "image": "",
       "description": "Projeto fullstack consumindo API da RIOT Games, feito para que jogadores possam consultar perfis de outros jogadores afim de visualizar o elo, histórico de partidas e afins.",
-      "stack": ["Javascript", "Typescript", "Tailwind", "Next.js", "Node.js"],
+      "stack": [
+        "Javascript",
+        "Typescript",
+        "Tailwind",
+        "Next.js",
+        "Node.js"
+      ],
       "gitLink": "https://github.com/antoniornneto/lol-match-history",
-      "link": ""
-    },
-    {
-      "id": 7,
-      "title": "Next Auth",
-      "image": "",
-      "description": "Projeto fullstack praticando o Next Auth, ferramenta Serverless de autenticação para projetos em NextJS.",
-      "stack": ["Typescript", "NextAuth", "Tailwind", "Next.js"],
-      "gitLink": "https://github.com/antoniornneto/next-auth",
       "link": ""
     }
   ]
